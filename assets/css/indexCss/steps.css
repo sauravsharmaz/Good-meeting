@@ -75,6 +75,7 @@
     position: absolute;
     border: 1px solid var(--light-black-color);
     border-style: dashed;
+    width: 0;
 }
 
 .stepsSection .steps .one::after,
