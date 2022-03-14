@@ -34,4 +34,9 @@
     html {
         font-size: 62.5%;
     }
+    @media screen and (max-width: 1242px) {
+        html {
+            font-size: 56.9%;
+        }
   }
+}

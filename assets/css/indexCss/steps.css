@@ -73,8 +73,7 @@
 .step3_text::after {
     content: '';
     position: absolute;
-    border: 1px solid var(--light-black-color);
-    border-style: dashed;
+    border: 1px dashed var(--light-black-color);
     width: 0;
 }
 
