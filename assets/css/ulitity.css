@@ -44,3 +44,6 @@ html {
     --secondary-color: rgb(41,99,224);
     --light-black-color:#313640;
 }
+.letterSpacing{
+    letter-spacing: .1rem;
+}

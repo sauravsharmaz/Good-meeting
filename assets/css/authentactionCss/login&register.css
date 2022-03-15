@@ -23,36 +23,12 @@ html{
     width: 14rem;
     margin: 1rem;
 }
-.container .section1 .text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 10rem;
-    color: white;
-}
-.container .section1 .text p:nth-child(1){
-    font-size: 4rem;
-    font-weight: 700;
-}
-.container .section1 .text p:nth-child(2){
-    font-size: 1.9rem;
-    font-weight: 600;
-    letter-spacing: .1rem;
-}
-.container .section1 .image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container .section1 .image img{
-    width: 38rem;
-    margin-top: 4rem;
-}
+
 .container .section2{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--light-black-color);
 }
 .container .section2 .section2Container{
     height: 46rem;
@@ -63,8 +39,7 @@ html{
 }
 .container .section2 .section2Container p:nth-child(1){
     font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: .1rem;
+    font-weight: 700;;
 }
 .container .section2 .group1{
     display: flex;

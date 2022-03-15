@@ -22,7 +22,6 @@
 
 .myAbout p:nth-child(2) {
     font-size: 3rem;
-    letter-spacing: .1rem;
     font-weight: 600;
 }
 
@@ -91,6 +90,5 @@
 .section2 .group3 p:nth-child(3),
 .section2 .group3 p:nth-child(4),
 .section2 .group3 p:nth-child(2) {
-    letter-spacing: .1rem;
     line-height: 3.3rem;
 }

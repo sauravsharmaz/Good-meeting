@@ -47,7 +47,6 @@
 .testimonialSection .testimonialsText {
     font-size: 2.3rem;
     text-align: center;
-    letter-spacing: .1rem;
 }
 
 .testimonialsText .comma1,
@@ -91,7 +90,6 @@
     text-align: center;
     font-weight: 600;
     color: var(--light-black-color);
-    letter-spacing: .1rem;
 }
 .section5 .group2 .btns{
     display: flex;

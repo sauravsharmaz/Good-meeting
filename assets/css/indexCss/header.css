@@ -75,7 +75,7 @@
     justify-content: space-around;
     align-items: center;
 }
-.registerBtn a{
+.registerBtn a, .loginBtn a{
     color: white;
 }
 .registerBtn, .loginBtn{
