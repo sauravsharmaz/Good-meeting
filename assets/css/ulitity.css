@@ -1,11 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .cursor {
     cursor: pointer;
 }
 
-.Font1 {
+.font1 {
     font-family: 'Trocchi', serif;
 }
-.Font2 {
+.font2 {
     font-family: 'Merriweather', serif;
 }
 
@@ -30,4 +34,13 @@ span {
     border-radius: 0.3rem;
     background-color: var(--primary-color);
     cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+    --primary-color: rgb(229,80,80);
+    --secondary-color: rgb(41,99,224);
+    --light-black-color:#313640;
 }

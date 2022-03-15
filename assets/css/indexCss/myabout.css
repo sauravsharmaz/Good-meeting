@@ -85,7 +85,9 @@
 .section2 .group3 p:nth-child(2) {
     font-size: 4rem;
 }
-
+.section2 .group3 p:nth-child(3) {
+    font-size: 2rem;
+}
 .section2 .group3 p:nth-child(3),
 .section2 .group3 p:nth-child(4),
 .section2 .group3 p:nth-child(2) {

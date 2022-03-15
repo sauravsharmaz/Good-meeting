@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
-html {
-    font-size: 62.5%;
-    --primary-color: rgb(229,80,80);
-    --secondary-color: rgb(41,99,224);
-    --light-black-color:#313640;
-}
 .section1{
    height: 100vh;
    width: 100%;
@@ -46,7 +36,6 @@ html {
     justify-content: space-between;
 }
 .headerContainer .ulContainer ul li a{
-    text-decoration: none;
     color: var(--light-black-color);
 }
 .headerContainer .ulContainer ul li:nth-child(1):after,
@@ -85,6 +74,9 @@ html {
     width: 30rem;
     justify-content: space-around;
     align-items: center;
+}
+.registerBtn a{
+    color: white;
 }
 .registerBtn, .loginBtn{
     font-weight: 400;
