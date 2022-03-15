@@ -14,6 +14,7 @@
     justify-content: space-around;
     padding-top: 1rem;
     padding-bottom: .3rem;
+    align-items: center;
     box-shadow: 0rem 0.1rem 0.1rem -0.1rem #313640;
 }
 .headerContainer .logoContainer{
@@ -50,7 +51,6 @@
     position: absolute;
     background-color: var(--primary-color);
     top: 6rem;
-    transition: all .4s;
 }
 .headerContainer .ulContainer ul li:nth-child(1):after{
     left: 47rem;
@@ -87,4 +87,22 @@
 }
 .loginBtn{
     background-color:var(--secondary-color);
+    padding: .8rem 1rem;
+}
+.headerBox .darkSwitch{
+    border: 1px solid;
+    display: flex;
+    font-size: 2rem;
+    width: 6rem;
+    height: 4rem;
+    border-radius: 1rem;
+    color: #313640;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    transition: all 1s;
+}
+.circle{
+    position: relative;
+    /* right: 3rem; */
 }

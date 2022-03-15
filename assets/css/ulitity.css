@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: white;
+}
+.dark-mode{
+    filter: invert(1) hue-rotate(180deg)
+}
+.invert{
+    filter: invert(1) hue-rotate(180deg)
+}
 .cursor {
     cursor: pointer;
 }
@@ -58,4 +67,7 @@ html {
 }
 .headerBoxFixed{
     padding-top: 0rem;
+}
+p{
+    color: var(--light-black-color);
 }

@@ -128,7 +128,7 @@
 .stepsSection .steps .btn {
     margin-top: 3rem;
     cursor: pointer;
-    background-color: white;
+    background-color: inherit;
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
     width: 20rem;
