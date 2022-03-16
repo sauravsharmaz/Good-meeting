@@ -1,0 +1,9 @@
+.white{
+    color: white !important;
+}
+.havea-email{
+    color: var(--secondary-color);
+}
+.meetingLink-dark{
+    background-color: rgba(0, 0, 0, 0.747) !important;
+}

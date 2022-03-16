@@ -9,6 +9,9 @@
 .footer .group1 img{
     width: 17rem;
 }
+.footer p{
+    color: white;
+}
 .footer .group1 p{
     font-size: 1.3rem;
 }

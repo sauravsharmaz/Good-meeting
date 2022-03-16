@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/ulitity.css" />
     <link rel="stylesheet" href="./assets/css/indexCss/header.css" />
     <link rel="stylesheet" href="./assets/css/indexCss/heroSection.css" />
@@ -13,8 +16,10 @@
     <link rel="stylesheet" href="./assets/css/indexCss/slider.css">
     <link rel="stylesheet" href="./assets/css/indexCss/footer.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/darkToggle.css">
     <title>GoodMeeting</title>
 </head>
+
 <body>
     <div class="root">
         <div class="section1 landingBanner">
@@ -35,8 +40,18 @@
                     </div>
                     <!-- logout login -->
                     <div class="login_logout_section font1">
-                        <div class="button1  registerBtn fontSize1"><a href="./pages/authentication/register.html">Register Now</a></div>
-                        <div class="loginBtn fontSize1 cursor"><a href="./pages/authentication/login.html">Login</a></div>
+                        <div class="button1  registerBtn fontSize1">
+                            <a href="./pages/authentication/register.html">Register Now</a>
+                        </div>
+                        <div class="loginBtn fontSize1 cursor button1">
+                            <a href="./pages/authentication/login.html">Login</a>
+                        </div>
+                    </div>
+                    <!-- dark mode switch -->
+                    <div class="darkSwitch">
+                        <i class="fa-solid fa-moon moon"></i>
+                        <i class="fa-solid fa-circle circle"></i>
+                        <i class="fa-solid fa-sun-bright"></i>
                     </div>
                     <!-- header box end -->
                 </div>
@@ -49,7 +64,10 @@
                     <div class="infoText">
                         <div class="subHeading1 font2">A Good Meeting starts off with</div>
                         <div class="meetingLink fontSize1">
-                            <a href="">havea@goodmeeting.today</a>
+                            <a href=""><strong id="havea-email">havea@goodmeeting.today</strong></a>
+                            <span>
+                                <i class="fa-solid fa-copy inverted copy cursor"></i>
+                            </span>
                         </div>
                         <div class="subHeading2 font1 fontSize1 letterSpacing">
                             <p>
@@ -61,7 +79,7 @@
                         <div class="getStartedBtn button1">Get Started For Free</div>
                         <div class="socialLinks font1">
                             <small>support</small>
-                            <div class="supportLogo cursor">
+                            <div class="supportLogo cursor inverted">
                                 <div class="gmail">
                                     <img src="./assets/images/gmail.png" alt="gmail">
                                     <p>gmail</p>
@@ -76,7 +94,7 @@
                 </div>
                 <!-- text section end-->
                 <!-- image section -->
-                <div class="imageSection">
+                <div class="imageSection inverted">
                     <img src="./assets/images/main.png" alt="image" />
                 </div>
                 <!-- image section end-->
@@ -91,21 +109,22 @@
             <!-- myAbout section -->
             <div class="myAbout font1">
                 <p class="fontSize1">About Good Meeting</p>
-                <p class="letterSpacing">Unproductive meetings waste both money and time for employees and organisations</p>
+                <p class="letterSpacing">Unproductive meetings waste both money and time for employees and organisations
+                </p>
                 <p class="fontSize2">To put these in figures…</p>
             </div>
             <!-- group1 -->
             <div class="group1">
                 <div class="part1">
-                    <img src="./assets/images/time.svg" alt="img">
+                    <img src="./assets/images/time.svg" class="inverted" alt="img">
                     <p>It costs the United States</p>
                     <span>$37 billion/year*</span>
                 </div>
                 <div class="part2">
-                    <img src="./assets/images/&.svg" alt="img">
+                    <img src="./assets/images/&.svg" class="inverted" alt="img">
                 </div>
                 <div class="part3">
-                    <img src="./assets/images/time.svg" alt="img">
+                    <img src="./assets/images/time.svg" class="inverted" alt="img">
                     <p>In 2008 it took <span>15%</span> of</p>
                     <p>$an organization’s Collective Time*</p>
                 </div>
@@ -120,11 +139,11 @@
             <!-- group3 -->
             <div class="group3">
                 <div class="img">
-                    <img src="./assets/images/arrow.svg" alt="img">
+                    <img src="./assets/images/arrow.svg" class="inverted" alt="img">
                 </div>
 
                 <p class="letterSpacing">That’s where we come in</p>
-                <p class= "font1 fontSize2 letterSpacing">
+                <p class="font1 fontSize2 letterSpacing">
                     GoodMeeting are tackling the relentless issue of inefficient, unproductive and unnecessary meetings
                     through a two-step process that provides feedback on the conferences you hold
                     as well as allowing you to critically evaluate those you participate in.
@@ -142,21 +161,21 @@
             <div class="steps">
                 <!-- step1  -->
                 <div class="step1">
-                    <img src="./assets/images/rocket.png" alt="start">
+                    <img src="./assets/images/rocket.png" class="inverted" alt="start">
                     <h1 class="count one">1</h1>
                     <div class="step1_text">
                         <h1 class="text">Create an account</h1>
                         <p class="fontSize1">Sign up for free</p>
                         <p class="fontSize1"> it takes less than 2 minutes.</p>
                         <div class="button1 btn">
-                            Get Satrted Now
+                            Get Started Now
                         </div>
                     </div>
 
                 </div>
                 <!-- step 2 -->
                 <div class="step2">
-                    <img src="./assets/images/profile.png" alt="profile">
+                    <img src="./assets/images/profile.png" class="inverted" alt="profile">
                     <h1 class="count two">2</h1>
                     <div class="step2_text">
                         <h1 class="text">Start a new meeting</h1>
@@ -170,7 +189,7 @@
                 </div>
                 <!-- step3 -->
                 <div class="step3">
-                    <img src="./assets/images/feedback.png" alt="feedback">
+                    <img src="./assets/images/feedback.png" class="inverted" alt="feedback">
                     <h1 class="count three">3</h1>
                     <div class="step3_text">
                         <h1 class="text">Gathering feedback</h1>
@@ -178,7 +197,7 @@
                         <p class="fontSize1"> meeting participants asking them to</p>
                         <p class="fontSize1">fill out a brief survey</p>
                         <div class="button1 btn btnStart">
-                            Start Trail
+                            Start Trial
                         </div>
                     </div>
 
@@ -186,7 +205,7 @@
                 </div>
                 <!-- step4 -->
                 <div class="step4">
-                    <img src="./assets/images/data.png" alt="data">
+                    <img src="./assets/images/data.png" class="inverted" alt="data">
                     <h1 class="count four">4</h1>
                     <div class="step4_text">
                         <h1 class="text">It’s crunching time</h1>
@@ -225,10 +244,10 @@
                 <!-- testimonialsText section -->
                 <div class="testimonialsText font1 letterSpacing">
                     <div class="comma1">
-                        <img src="./assets/images/commas.png" alt="">
+                        <img src="./assets/images/commas.png" class="inverted" alt="">
                     </div>
                     <div class="review">
-                        <p>
+                        <p class="pat">
                             Good Meeting Today has improved my meeting planning, execution and preparation and in
                             turn increased my meeting productivity notably. The platform is simple and easy to use
                             and provides you with accountability for your meetings. I have gotten addicted to
@@ -236,7 +255,7 @@
                         </p>
                     </div>
                     <div class="comma2">
-                        <img src="./assets/images/commas.png" alt="">
+                        <img src="./assets/images/commas.png" class="inverted" alt="">
                     </div>
 
                 </div>
@@ -258,20 +277,21 @@
             <!-- testimonial section end-->
             <!-- group2 section -->
             <div class="group2">
-                <p class= font1">Let’s Get Started</p>
-                <p class="font2 letterSpacing">Sign up with us today and take the first step in increasing meeting productivity</p>
+                <p class=font1">Let’s Get Started</p>
+                <p class="font2 letterSpacing">Sign up with us today and take the first step in increasing meeting
+                    productivity</p>
                 <div class="btns">
                     <div class="button1">Request A Demo</div>
                     <div class="button1">Get Started</div>
                 </div>
             </div>
-              <!-- group2 section end-->
+            <!-- group2 section end-->
         </div>
         <!-- section 4 end -->
         <!-- footer section -->
         <div class="footer font1">
             <div class="group1">
-                <img src="./assets/images/logo.png" alt="">
+                <img src="./assets/images/logo.png" class="inverted" alt="">
                 <p>Copyright 2019. GoodMeeting.today</p>
             </div>
             <div class="group2">
@@ -294,7 +314,9 @@
 
         <!-- footer section end-->
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/javascript/index.js"></script>
 </body>
 
