@@ -71,3 +71,6 @@ html {
 p{
     color: var(--light-black-color);
 }
+.hide{
+    display: none;
+}

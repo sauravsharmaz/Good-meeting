@@ -96,13 +96,13 @@
     width: 6rem;
     height: 4rem;
     border-radius: 1rem;
-    color: #313640;
-    justify-content: space-around;
+    background-color: var(--secondary-color);
+    color: white;
+    justify-content: center;
     align-items: center;
     position: relative;
-    transition: all 1s;
+    transition: 5s;
 }
-.circle{
-    position: relative;
-    /* right: 3rem; */
+.headerBox .darkSwitch .icon{
+    width: 0rem;
 }
