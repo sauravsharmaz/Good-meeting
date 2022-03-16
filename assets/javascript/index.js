@@ -50,19 +50,4 @@ $('.darkSwitch').click(function() {
     }
 })
 });
-
-// setTimeout(() => {
-//     sun.addClass('opacity1')
-// }, 200);
-
-// moon.toggleClass('active');
-// sun.toggleClass('width')
-// sun.toggleClass('opacity');
-// sun.removeClass('opacityfull')
-
-
-// sun.removeClass('opacity1');
-//         sun.removeClass('opacity')
-//     setTimeout(() => {
-//         sun.addClass('opacityfull')
-//     }, 1000);
+console.log(window.innerWidth)

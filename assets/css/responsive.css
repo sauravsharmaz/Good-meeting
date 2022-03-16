@@ -13,6 +13,11 @@
       font-size:  93.7%;
     }
   }
+  @media screen and (max-width: 1920px) {
+    html {
+      font-size:  90.7%;
+    }
+  }
   @media screen and (max-width: 1825px) {
     html {
       font-size: 83.6%;
