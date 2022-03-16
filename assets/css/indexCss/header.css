@@ -8,8 +8,10 @@
 .headerContainer{
     padding: 0rem 9rem;
     height: 13%;
+    background-color: white;
 }
 .headerContainer .headerBox{
+    background-color: inherit;
     display: flex;
     justify-content: space-around;
     padding-top: 1rem;
@@ -51,23 +53,27 @@
     position: absolute;
     background-color: var(--primary-color);
     top: 6rem;
+    transition: all .7s;
 }
 .headerContainer .ulContainer ul li:nth-child(1):after{
-    left: 47rem;
+    left: 41rem;
 }
 .headerContainer .ulContainer ul li:nth-child(2):after{
-    left: 58rem;
+    left: 51rem;
 }
 .headerContainer .ulContainer ul li:nth-child(3):after{
-    left: 70rem;
+    left: 63.8rem;
 }
-.headerContainer .ulContainer ul li:nth-child(1):hover::after,
+
 .headerContainer .ulContainer ul li:nth-child(2):hover::after,
 .headerContainer .ulContainer ul li:nth-child(3):hover::after,
 .headerContainer .ulContainer ul li:nth-child(3):hover::after
 
 {
     width: 8rem;
+}
+.headerContainer .ulContainer ul li:nth-child(1):hover::after{
+    width: 6rem;
 }
 .headerContainer .login_logout_section{
     display: flex;
@@ -100,9 +106,30 @@
     color: white;
     justify-content: center;
     align-items: center;
-    position: relative;
-    transition: 5s;
+    position: relative; 
 }
-.headerBox .darkSwitch .icon{
-    width: 0rem;
+.headerBox .darkSwitch .moon{
+    width: 4rem;
+    position: relative;
+    left: 1.5rem;
+    opacity: 0;
+}
+.headerBox .darkSwitch .sun{
+    width: 3rem;    
+    position: relative;
+    right: 2rem;
+    z-index: 0;
+    opacity: 1;
+    transition: 1s;
+}
+.opacityfull{
+    opacity: 1 !important;
+    transition: 1s;
+}
+.opacityzero{
+    opacity: 0 !important   ;
+    transition: 1s;
+}
+.width{
+    width: 3.6rem !important;
 }

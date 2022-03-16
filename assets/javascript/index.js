@@ -2,24 +2,26 @@
 $(document).ready(function(){
 const moon = $(".moon");
 const sun = $(".sun");
-const circle = $(".circle");
 // make headerContainer fixed on scrolling
 window.onscroll =  () => {
-    if (window.scrollY > 99) {
+    if (window.scrollY > 110) {
+    console.log("fixed")
         $('.headerContainer').addClass('fixed');
         $('.headerBox').addClass('headerBoxFixed');
+        $('.section2').addClass('section2Fixed')
     } else {
         $('.headerContainer').removeClass('fixed');
         $('.headerBox').removeClass('headerBoxFixed');
+        $('.section2').removeClass   ('section2Fixed')
     }
 }
 // dark mode toggle functionality
 
 $('.darkSwitch').click(function() {
-    circle.toggleClass('hide')
-    moon.toggleClass('hide');
-    if(circle.hasClass('hide')){
-        moon.css("", "yellow")
+    moon.toggleClass('active');
+    moon.toggleClass('opacityfull');
+    sun.toggleClass('opacityzero')
+    if(moon.hasClass('active')){
         let logoContainerImg = $('.logoContainer img')[0].remove();
         $(".logoContainer").html(`<img src = "../assets/images/logo2.png"></img>`)
         document.body.style.backgroundColor = "#0E1525";
@@ -32,6 +34,8 @@ $('.darkSwitch').click(function() {
         $('.meetingLink').addClass('meetingLink-dark');
         
     }else{
+        
+      setTimeout(() => {
         let logoContainerImg = $('.logoContainer img')[0].remove();
         $(".logoContainer").html(`<img src = "../assets/images/logo.png"></img>`)
         document.body.style.backgroundColor = "white";
@@ -42,6 +46,23 @@ $('.darkSwitch').click(function() {
         $('.subHeading1').removeClass('white');
         $('#havea-email').removeClass('havea-email');
         $('.meetingLink').removeClass('meetingLink-dark');
+      }, 100);
     }
 })
 });
+
+// setTimeout(() => {
+//     sun.addClass('opacity1')
+// }, 200);
+
+// moon.toggleClass('active');
+// sun.toggleClass('width')
+// sun.toggleClass('opacity');
+// sun.removeClass('opacityfull')
+
+
+// sun.removeClass('opacity1');
+//         sun.removeClass('opacity')
+//     setTimeout(() => {
+//         sun.addClass('opacityfull')
+//     }, 1000);
